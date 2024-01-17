@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="back-img back-cover">
+    
+
+    <nav class="navbar navbar-expand-lg fixed-top p-3 color-nav">
+        <div class="container ">
+            <div class="w-25">
+            <img src="photo/WhatsApp Image 2024-01-15 at 11.40.59 AM.jpeg" class="w-25" alt="weather" />
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item ">
+                <a class="nav-link text-white fw-bolder mx-4 active" aria-current="page" href="#">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-white mx-4" href="#">News</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-white mx-4" href="#">Live camera</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-white mx-4" href="#">Photos</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-white mx-4" href="#">Contact</a>
+              </li>
+              
+          </div>
+        </div>
+      </nav>
+    
+
+      
+      <div class="test">
+        <div class="input-group marg-input ">
+          <input id="searchWeather" type="text" class="form-control color-nav  " placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary bg-primary text-white p-3 " type="button" id="button-addon2 ">find</button>
+        </div>
+  
+      </div>
+
+   
+      <div class="d-flex justify-content-center  align-items-center "> 
+        <div class="cont-div mx-1">
+          <div class="d-flex justify-content-between bg-dark ">
+            <span class="mx-2 text-white" id="todayWeather">sunday</span>
+            <span>
+              <span class="mx-2 text-white" id="todayDayWeather">30 </span>
+            <span class="mx-2 text-white" id="todayMonthWeather" > may</span>
+            </span>
+            
+          </div>
+          <div>
+            <h5 class="mt-4 mx-3 text-white" id="todayCountryWeather">cairo</h5>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3 class="mt-3 mx-3 fa-3x text-white" id="todayDegreeWeather">20 c</h3>
+            <img id="todayIconWeather">
+          </div>
+          <div>
+            <p class=" m-2 text-white" id="todayStatusWeather">sunny</p>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <div class="d-flex">
+              <i class=" mx-2 fa-2x fa-solid fa-umbrella"></i>
+              <p class="text-white" id="todayUmbrealCountWeather">20</p>
+            </div>
+            <div class="d-flex">
+              <i class=" mx-2 fa-2x fa-solid fa-wind"></i>
+              <p class="text-white" id="todayWindSpeadWeather">20</p>
+            </div>
+            <div class="d-flex">
+              <i class=" mx-2 fa-2x fa-solid fa-compass"></i>
+              <p class="text-white"id="todayNinSpeadWeather">20</p>
+            </div> 
+          </div>
+        </div>
+
+        <div class="cont-div mx-1">
+          <div class="d-flex justify-content-between bg-dark ">
+            <span class="mx-2 text-white" id="tomorrowWeather">sunday</span>
+            <span>
+              <span class="mx-2 text-white" id="tomorrowDayWeather">30 </span>
+            <span class="mx-2 text-white" id="tomorrowMonthWeather" > may</span>
+            </span>
+            
+          </div>
+          <div>
+            <h5 class="mt-4 mx-3 text-white" id="tomorrowCountryWeather">cairo</h5>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3 class="mt-3 mx-3 fa-3x text-white" id="tomorrowDegreeWeather">20 c</h3>
+            <img id="tomorrowIconWeather">
+          </div>
+          <div>
+            <p class=" m-2 text-white" id="tomorrowStatusWeather">sunny</p>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <div class="d-flex">
+              <i class=" mx-2 fa-2x fa-solid fa-car" id="tomorrowUmbrealWeather"></i>
+              <p class="text-white" id="tomorrowUmbrealCountWeather">20</p>
+            </div>
+            <div class="d-flex">
+              <i class=" mx-2 fa-2x fa-solid fa-car" id="tomorrowWindWeather"></i>
+              <p class="text-white" id="tomorrowWindSpeadWeather">20</p>
+            </div>
+            <div class="d-flex">
+              <i class=" mx-2 fa-2x fa-solid fa-car" id="tomorrowNinWeather"></i>
+              <p class="text-white"id="tomorrowNinSpeadWeather">20</p>
+            </div> 
+          </div>
+        </div>
+        <div class="cont-div mx-1">
+          <div class="d-flex justify-content-between bg-dark ">
+            <span class="mx-2 text-white" id="afterTomorrowWeather">sunday</span>
+            <span>
+              <span class="mx-2 text-white" id="afterTomorrowDayWeather">30 </span>
+            <span class="mx-2 text-white" id="afterTomorrowMonthWeather" > may</span>
+            </span>
+            
+          </div>
+          <div>
+            <h5 class="mt-4 mx-3 text-white" id="afterTomorrowCountryWeather">cairo</h5>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3 class="mt-3 mx-3 fa-3x text-white" id="afterTomorrowDegreeWeather">20 c</h3>
+            <img id="afterTomorrowIconWeather">
+          </div>
+          <div>
+            <p class=" m-2 text-white" id="afterTomorrowStatusWeather">sunny</p>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <div class="d-flex">
+              <i class=" mx-2 fa-2x fa-solid fa-car" id="afterTomorrowUmbrealWeather"></i>
+              <p class="text-white" id="afterTomorrowUmbrealCountWeather">20</p>
+            </div>
+            <div class="d-flex">
+              <i class=" mx-2 fa-2x fa-solid fa-car" id="afterTomorrowWindWeather"></i>
+              <p class="text-white" id="afterTomorrowWindSpeadWeather">20</p>
+            </div>
+            <div class="d-flex">
+              <i class=" mx-2 fa-2x fa-solid fa-car" id="afterTomorrowNinWeather"></i>
+              <p class="text-white"id="afterTomorrowNinSpeadWeather">20</p>
+            </div> 
+          </div>
+        </div>
+
+         
+          </div>
+        </div>
+
+        
+      </div>
+
+    
+
+    
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
